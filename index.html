@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-list-check"></i>ToDo List</h1>
+        
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <input type="datetime-local" id="dateTimePicker" class="date-time-picker">
+            <button onclick="addTask()" class="add-btn">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterTasks('all')">
+                <i class="fas fa-list"></i> All
+            </button>
+            <button class="filter-btn" onclick="filterTasks('pending')">
+                <i class="fas fa-clock"></i> Pending
+            </button>
+            <button class="filter-btn" onclick="filterTasks('completed')">
+                <i class="fas fa-check-circle"></i> Completed
+            </button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>To Do List</title>
+    // ... existing code ...
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-list-check"></i>To Do List</h1>
+        // ... existing code ...
+    </div>
+    // ... existing code ...
+</body>
+</html>
